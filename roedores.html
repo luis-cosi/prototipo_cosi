@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosi Bio - Tu Tienda Online</title>
+    <link rel="stylesheet" href="insecto.css">
+    <link rel="stylesheet" href="buscador.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <img src="img/logo_cosi_conblanco.png" alt="Logo de cosi bio">
+        </div>
+        <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="roedores.html">Roedores</a></li>
+                <li><a href="insectos.html">Insectos</a></li>
+                <li><a href="jardin.html">Jardineria</a></li>
+                <li><a href="profesional.html">Profesional</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="searchContainer">
+            <input type="text" class="searchInput" placeholder="Buscar productos..." id="searchInput">
+            <button class="searchButton" onclick="searchProducts()">Buscar</button>
+        </div>
+        </div>
+
+    </header>
+
+    <section id="inicio">
+        <div class="hero">
+            <h1>Tu Defensa Contra Roedores</h1>
+            <p>Los mejores productos para el control de Roedores</p>           
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="product-grid">
+            <div class="product" data-name="bote de 60g pellets" data-category="insectos">
+                <img src="img/roedores/bote_60g.png" alt="ya cayo 60g pellets">
+                <h3>¡Ya Cayó! Pellets Bote 60g Pellets</h3>
+                <p>Rodenticida en pellets con atrayente</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/roedores/trampa-raton.png" alt="trampa para ratón">
+                <h3>¡Ya Cayó! Trampa para ratón</h3>
+                <p>Trampa de pegamento, con atrayente</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/roedores/veneno_en_canicas.png" alt="bolsa difarat canicas">
+                <h3>Difarat Canica 25g</h3>
+                <p>Controla a roedores en multiples dosis</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/roedores/venenoen_en_bloque.png" alt="bolsa difarat bloque">
+                <h3>Difarat Bloque 28g</h3>
+                <p>Controla a roedores en multiples dosis, formulado en bloque</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/roedores/yacayo-pellets_20g.png" alt="ya cayo 20g pellets">
+                <h3>Ya Cayó 20g Pellets</h3>
+                <p>Rodenticida en pellets, para todo tipo de roedores</p>
+                <a href="compra/20g_yacayo.html">
+                <button>Comprar</button></a>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 COSI-BIO. Todos los derechos reservados.</p>
+    </footer>
+
+     <script src="/js/menu.js"></script>
+     <script src="/js/buscar.js"></script>
+
+</body>
+</html>

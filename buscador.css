@@ -1,0 +1,101 @@
+.searchContainer {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+.searchInput {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    flex-grow: 1; /* Permite que el input crezca */
+}
+
+.searchButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Evita que el texto del botón se divida */
+}
+
+.searchButton:hover {
+    background-color: #45a049;
+    transform: scale(1.02); /* Efecto sutil al hacer hover */
+}
+
+/* Tablet - Pantallas medianas */
+@media (max-width: 992px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+    
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+        display: none; /* Oculto por defecto en móvil */
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .searchContainer {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
+
+
+/* Móvil - Pantallas pequeñas */
+@media (max-width: 768px) {
+    .searchContainer {
+        order: 3;
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px;
+        max-width: none;
+    }
+    
+    .searchInput {
+        width: 100%;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .searchButton {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Pantallas muy pequeñas (ej. móviles en vertical) */
+@media (max-width: 480px) {
+    .searchContainer {
+        flex-direction: column; /* Apila input y botón */
+        gap: 8px;
+    }
+    
+    .searchInput,
+    .searchButton {
+        border-radius: 20px; /* Bordes redondeados completos */
+        width: 100%;
+    }
+    
+    .searchButton {
+        padding: 10px;
+    }
+}

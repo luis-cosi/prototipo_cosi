@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosi Bio - Tu Tienda Online</title>
+    <link rel="stylesheet" href="insecto.css">
+    <link rel="stylesheet" href="buscador.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <img src="img/logo_cosi_conblanco.png" alt="Logo de cosi bio">
+        </div>
+        <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="roedores.html">Roedores</a></li>
+                <li><a href="insectos.html">Insectos</a></li>
+                <li><a href="jardin.html">Jardineria</a></li>
+                <li><a href="profesional.html">Profesional</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="searchContainer">
+            <input type="text" class="searchInput" placeholder="Buscar productos..." id="searchInput">
+            <button class="searchButton" onclick="searchProducts()">Buscar</button>
+        </div>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="hero">
+            <h1>Protección para tu Jardín</h1>
+            <p>Los mejores productos de Jardineria</p>           
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="product-grid">
+            <div class="product">
+                <img src="img/jardineria/crucial.png" alt="bote crucial">
+                <h3>Crucial 20 CE 240ml</h3>
+                <p>Insecticida concentrado de fácil aplicación</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/jardineria/dactor_flow_100ml.png" alt="bote dactor flow 100ml">
+                <h3>Dactor Flow 100ml</h3>
+                <p>Insecticida con excelente efecto inicial y residual</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/jardineria/dactor_p.png" alt="bolsa de dactor p">
+                <h3>Dactor P 1kg</h3>
+                <p>Insecticida en polvo listo para usar</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/jardineria/dactorflow_950.png" alt="dactor flow 950ml">
+                <h3>Dactor Flow 950ml</h3>
+                <p>Insecticida con excelente efecto inicial y residual</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/jardineria/savage.png" alt="bote de savage">
+                <h3>Savage 100ml</h3>
+                <p>Controla todo tipo de plaga</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/jardineria/tappso.png" alt="Bolsa de tappso">
+                <h3>Tapps'o 454g</h3>
+                <p>Atrae eficazmente a las babosas y caracoles</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/jardineria/termiga.png" alt="bote de termiga">
+                <h3>Termiga 96 SC 1L</h3>
+                <p>Potente insecticida para el control de todo tipo de insectos</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 COSI-BIO. Todos los derechos reservados.</p>
+    </footer>
+
+     <script src="/js/menu.js"></script>
+     <script src="/js/buscar.js"></script>
+
+</body>
+</html>

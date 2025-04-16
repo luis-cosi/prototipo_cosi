@@ -1,0 +1,379 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F4F1DE;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.nav-menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #53b87f;
+}
+
+/* Estilos para la sección de inicio */
+#background .producto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#background .producto img {
+    width: 70%;
+    opacity: 95;
+}
+
+#inicio-visita{
+    background-color: #fff159;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-mercado{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.hero-mercado img{
+    max-width: 50%;
+    height: auto;
+}
+
+.hero-mercado .cta {
+    background-color: #fa2c15;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.hero-mercado .cta:hover {
+    background-color: #ca2310;
+}
+
+#inicio {
+    background-color: #F4F1DE;
+}
+
+#inicio .hero {
+    color: #000000;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#inicio .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#inicio .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#inicio .hero .cta {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#inicio .hero .cta:hover {
+    background-color: #53b87f;
+}
+
+/* Estilos para la sección de productos */
+#productos {
+    padding: 20px;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 200px;
+}
+
+.product img:hover{
+    scale: 1.1;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la sección sobre nosotros */
+#nosotros {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#nosotros p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    padding: 20px;
+    text-align: center;
+    background-color: #F4F1DE;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contacto form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contacto form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries para Responsive Design */
+
+/* Para tablets */
+
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(194, 186, 186);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+
+    header .logo img {
+        max-width: 100px;
+    }
+
+    #inicio .hero h1 {
+        font-size: 1.8em;
+    }
+
+    #inicio .hero p {
+        font-size: 0.9em;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+
+    #nosotros h2 {
+        font-size: 1.8em;
+    }
+
+    #nosotros p {
+        font-size: 0.9em;
+    }
+
+    #contacto h2 {
+        font-size: 1.8em;
+    }
+
+    #contacto form input,
+    #contacto form textarea {
+        font-size: 0.9em;
+    }
+}

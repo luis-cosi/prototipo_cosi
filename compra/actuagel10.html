@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Seleccionado</title>
+    <link rel="stylesheet" href="/compras.css">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/buscador.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <img src="/img/logo_cosi_conblanco.png" alt="Logo Control de Plagas">
+        </div>
+        <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/roedores.html">Roedores</a></li>
+                <li><a href="/insectos.html">Insectos</a></li>
+                <li><a href="/jardin.html">Jardineria</a></li>
+                <li><a href="/profesional.html">Profesional</a></li>
+                <li><a href="/tienda.html">Tienda</a></li>
+                <li><a href="/index.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="searchContainer">
+            <input type="text" class="searchInput" placeholder="Buscar productos..." id="searchInput">
+            <button class="searchButton" onclick="searchProducts()">Buscar</button>
+        </div>
+        </div>
+
+    </header>
+
+
+    <section class="product-section">
+        <div class="product-container" data-name="20g ya cayo pellets">
+            <div class="product-image">
+                <img src="/img/insectos/actuagel_10g.png" alt="20g yacayo">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Actua Gel 10g</h1>
+                <p class="product-description">Descripción breve del producto. Incluye características principales y beneficios.</p>
+                
+                <div class="product-price">
+                    <span class="current-price">$99.99</span>
+                    <span class="old-price">$129.99</span>
+                    <span class="discount">-23%</span>
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Cantidad:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="10">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="product-total">
+                    <span>Total:</span>
+                    <span class="total-price">$99.99</span>
+                </div>
+                
+                <button class="add-to-cart">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 COSI-BIO. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="/js/compras.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/buscar.js"></script>
+</body>
+</html>

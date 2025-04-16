@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosi Bio - Tu Tienda Online</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="buscador.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <img src="img/logo_cosi_conblanco.png" alt="Logo Control de Plagas">
+        </div>
+        <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="roedores.html">Roedores</a></li>
+                <li><a href="insectos.html">Insectos</a></li>
+                <li><a href="jardin.html">Jardineria</a></li>
+                <li><a href="profesional.html">Profesional</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="searchContainer">
+            <input type="text" class="searchInput" placeholder="Buscar productos..." id="searchInput">
+            <button class="searchButton" onclick="searchProducts()">Buscar</button>
+        </div>
+        </div>
+
+    </header>
+
+    <!-- <section id="background">
+        <div class="producto">
+            <img src="img/bg_product.png" alt="productos en banner">
+        </div>
+    </section> -->
+
+    <section id="inicio">
+        <div class="hero">
+            <h1>Tu Defensa Contra Plagas</h1>
+            <p>Los mejores productos para el control de plagas en un solo lugar.</p>
+            <a href="tienda.html" class="cta">Ir a la Tienda</a>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="img/nuestros productos/trampa-cucaracha.png" alt="Insecticida">
+                <h3>¡Ya Cayó! Trampa de Cucaracha</h3>
+                <p>Trampa de pegamento con atrayente para Cucarachas</p>
+                <a href="/compra/trampa_cucaracha.html">
+                <button>Comprar</button></a>
+            </div>
+            <div class="product">
+                <img src="img/nuestros productos/bote_60g.png" alt="Insecticida">
+                <h3> ¡Ya Cayo! Pellets Bote de 60g Pellets</h3>
+                <p>Rodenticida en pellets,para todo tipo de roedores</p>
+                <a href="/compra/bote60g.html">
+                <button>Comprar</button></a>
+            </div>
+            <div class="product">
+                <img src="img/nuestros productos/trampa-raton.png" alt="Insecticida">
+                <h3>¡Ya Cayó! Trampa para Ratón</h3>
+                <p>Trampa de pegamento para rata</p>
+                <a href="/compra/trampa_raton.html">
+                <button>Comprar</button></a>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2> Productos más Vendidos</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="img/mas vendidos/actuagel_10g.png" alt="Insecticida">
+                <h3>Actua Gel 10g</h3>
+                <p>Controla todo tipo de cucaracha</p>
+                <a href="/compra/actuagel10.html">
+                <button>Comprar</button></a>
+            </div>
+            <div class="product">
+                <img src="img/mas vendidos/bolfo_talco.png" alt="Insecticida">
+                <h3>Bolfo Talco</h3>
+                <p>Excelente para la prevención y control de Pulgas</p>
+                <a href="/compra/bolfotalco.html">
+                <button>Comprar</button></a>
+            </div>
+            <div class="product">
+                <img src="img/mas vendidos/bote_60g.png" alt="Insecticida">
+                <h3>¡Ya Cayó! Pellets Bote de 60g</h3>
+                <p>Rodenticida en pellets,para todo tipo de roedores</p>
+                <a href="/compra/bote60g.html">
+                <button>Comprar</button></a>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa dedicada a ofrecer soluciones efectivas para el control de plagas.</p>
+        <h2>Visión</h2>
+        <p>Desarrollar una empresa verde, socialmente responsable y sustentable en el ofrecimiento de soluciones bio-racionales
+            para la preservación de la vida humana y animal.</p>
+        <h2>Misión</h2>
+        <p>Ser una empresa comprometida, posicionando marcas, líderes de mercado en el punto de venta adecuado de consumo;
+            brindando cadena de valor a nuestros servicios integrados.</p>
+    </section>
+
+    <section id="inicio-visita">
+        <div class="hero-mercado">
+            <img src="img/logo_mercadolibre.png" alt="logo mercado libre">
+            <a href="https://www.mercadolibre.com.mx/" class="cta" target="_blank">Visitanos</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <form name="contact" method="POST" data-netlify="true">
+
+                   <input type="text" name="name" placeholder="Nombre" />
+
+                   <input type="email" name="email" placeholder="Escribe tu correo" />
+
+                   <textarea name="message" placeholder="Escribe tu mensaje"></textarea>
+
+                  <button type="submit">Enviar</button>
+              </form>
+              
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 COSI-BIO. Todos los derechos reservados.</p>
+    </footer>
+
+     <script src="js/menu.js"></script>
+     <script src="js/buscar.js"></script>
+</body>
+</html>

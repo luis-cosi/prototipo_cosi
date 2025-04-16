@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosi Bio - Tu Tienda Online</title>
+    <link rel="stylesheet" href="insecto.css">
+    <link rel="stylesheet" href="buscador.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <img src="img/logo_cosi_conblanco.png" alt="Logo Control de Plagas">
+        </div>
+        <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="roedores.html">Roedores</a></li>
+                <li><a href="insectos.html">Insectos</a></li>
+                <li><a href="jardin.html">Jardineria</a></li>
+                <li><a href="profesional.html">Profesional</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="searchContainer">
+            <input type="text" class="searchInput" placeholder="Buscar productos..." id="searchInput">
+            <button class="searchButton" onclick="searchProducts()">Buscar</button>
+        </div>
+
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="hero">
+            <h1>Tu Defensa Contra las Cucarachas</h1>
+            <p>Los mejores productos para el control de todo tipo de Cucarachas</p>           
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="product-grid">
+            <div class="product" data-name="actua gel 10g" data-category="insectos">
+                <img src="img/insectos/actuagel_10g.png" alt=" Gel Insecticida">
+                <h3>Actua Gel 10g</h3>
+                <p>Controla todo tipo de especies de cucaracha</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/insectos/trampa-cucaracha.png" alt="trampa para cucaracha">
+                <h3>¡Ya Cayó! la Cuca</h3>
+                <p>Trampa de pegamento, con atrayente</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/insectos/gis_cucarachicida_1barra.png" alt="Gis cucarachicida">
+                <h3>¡Ya Cayó! Gis</h3>
+                <p>Gis cucarachicida,con una barra</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/insectos/gis_cucarachicida_3barras.png" alt="Gis cucarachicida">
+                <h3>¡Ya Cayó Gis</h3>
+                <p>Gis cucarachicida,con tres barras</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <section id="inicio-mosca">
+        <div class="hero-mosca">
+            <h1>Tu Defensa Contra las Moscas</h1>
+            <p>Los mejores productos para el control de Moscas.</p>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="product-grid">
+            <div class="product">
+                <img src="img/insectos/trampa_mosca.png" alt=" sobre de la trampa de mosca">
+                <h3>¡Ya Cayó! Trampa de Mosca</h3>
+                <p>Trampa tipo serpentina, con pegamento resistente</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/insectos/ecofly-20g.png" alt="sobre del  ecofly ">
+                <h3>Ecofly 20g</h3>
+                <p>Cebo para moscas, puede ser esparcido en seco o esparcido</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 COSI-BIO. Todos los derechos reservados.</p>
+    </footer>
+
+     <script src="/js/menu.js"></script>
+     <script src="/js/buscar.js"></script>
+
+</body>
+</html>
