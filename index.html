@@ -6,6 +6,7 @@
     <title>Cosi Bio - Tu Tienda Online</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="buscador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -33,18 +34,20 @@
         </div>
 
     </header>
-
-    <!-- <section id="background">
-        <div class="producto">
-            <img src="img/bg_product.png" alt="productos en banner">
+    
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <div class="nosotros-item">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una empresa dedicada a ofrecer soluciones efectivas para el control de plagas.</p>
         </div>
-    </section> -->
-
-    <section id="inicio">
-        <div class="hero">
-            <h1>Tu Defensa Contra Plagas</h1>
-            <p>Los mejores productos para el control de plagas en un solo lugar.</p>
-            <a href="tienda.html" class="cta">Ir a la Tienda</a>
+        <div class="nosotros-item">
+            <h2>Visión</h2>
+            <p>Desarrollar una empresa verde, socialmente responsable y sustentable en el ofrecimiento de soluciones bio-racionales para la preservación de la vida humana y animal.</p>
+        </div>
+        <div class="nosotros-item">
+            <h2>Misión</h2>
+            <p>Ser una empresa comprometida, posicionando marcas, líderes de mercado en el punto de venta adecuado de consumo; brindando cadena de valor a nuestros servicios integrados.</p>
         </div>
     </section>
 
@@ -55,14 +58,14 @@
                 <img src="img/nuestros productos/trampa-cucaracha.png" alt="Insecticida">
                 <h3>¡Ya Cayó! Trampa de Cucaracha</h3>
                 <p>Trampa de pegamento con atrayente para Cucarachas</p>
-                <a href="/compra/trampa_cucaracha.html">
+                <a href="productos/trampa-cucaracha.html">
                 <button>Comprar</button></a>
             </div>
             <div class="product">
                 <img src="img/nuestros productos/bote_60g.png" alt="Insecticida">
                 <h3> ¡Ya Cayo! Pellets Bote de 60g Pellets</h3>
                 <p>Rodenticida en pellets,para todo tipo de roedores</p>
-                <a href="/compra/bote60g.html">
+                <a href="productos/pellets_60g.html">
                 <button>Comprar</button></a>
             </div>
             <div class="product">
@@ -83,36 +86,33 @@
                 <img src="img/mas vendidos/actuagel_10g.png" alt="Insecticida">
                 <h3>Actua Gel 10g</h3>
                 <p>Controla todo tipo de cucaracha</p>
-                <a href="/compra/actuagel10.html">
+                <a href="/productos/actua-10.html">
                 <button>Comprar</button></a>
             </div>
             <div class="product">
                 <img src="img/mas vendidos/bolfo_talco.png" alt="Insecticida">
                 <h3>Bolfo Talco</h3>
                 <p>Excelente para la prevención y control de Pulgas</p>
-                <a href="/compra/bolfotalco.html">
+                <a href="/productos/bolfo-talco-producto.html">
                 <button>Comprar</button></a>
             </div>
             <div class="product">
                 <img src="img/mas vendidos/bote_60g.png" alt="Insecticida">
                 <h3>¡Ya Cayó! Pellets Bote de 60g</h3>
                 <p>Rodenticida en pellets,para todo tipo de roedores</p>
-                <a href="/compra/bote60g.html">
+                <a href="/productos/pellets_60g.html">
                 <button>Comprar</button></a>
             </div>
             <!-- Más productos aquí -->
         </div>
     </section>
 
-    <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una empresa dedicada a ofrecer soluciones efectivas para el control de plagas.</p>
-        <h2>Visión</h2>
-        <p>Desarrollar una empresa verde, socialmente responsable y sustentable en el ofrecimiento de soluciones bio-racionales
-            para la preservación de la vida humana y animal.</p>
-        <h2>Misión</h2>
-        <p>Ser una empresa comprometida, posicionando marcas, líderes de mercado en el punto de venta adecuado de consumo;
-            brindando cadena de valor a nuestros servicios integrados.</p>
+    <section id="inicio">
+        <div class="hero">
+            <h1>Tu Defensa Contra Plagas</h1>
+            <p>Los mejores productos para el control de plagas en un solo lugar.</p>
+            <a href="tienda.html" class="cta">Ir a la Tienda</a>
+        </div>
     </section>
 
     <section id="banner-promo">
@@ -121,16 +121,16 @@
         </div>
     </section>
 
-    <section id="inicio-visita">
-        <div class="hero-mercado">
+    <section class="fondo-mlb">
+    <div class="hero-mercado">
+        <a href="https://www.mercadolibre.com.mx/" class="cta" target="_blank">
             <img src="img/logo_mercadolibre.png" alt="logo mercado libre">
-            <a href="https://www.mercadolibre.com.mx/" class="cta" target="_blank">Visitanos</a>
-        </div>
+        </a>
+    </div>
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form>
             <form name="contact" method="POST" data-netlify="true">
 
                    <input type="text" name="name" placeholder="Nombre" />
@@ -141,12 +141,50 @@
 
                   <button type="submit">Enviar</button>
               </form>
-              
-        </form>
+    </section>
+
+    <section class="social-media">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <div class="social-icons">
+            <a href="https://facebook.com/tupagina" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/tupagina" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+        <p>Mantente al día con nuestras últimas noticias y promociones</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 COSI-BIO. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Teléfono: 55 66 04 66 06</li>
+                    <li>Email: info@actuagel.com</li>
+                    <li>Dirección: Sadi Cartnot #73 Int.3</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 ACTUA GEL. Todos los derechos reservados.
+        </div>
+    </footer>
     </footer>
 
      <script src="js/menu.js"></script>
